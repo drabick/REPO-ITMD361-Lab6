@@ -36,11 +36,14 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-    document.getElementById("entrybutton").addEventListener("click", function(){
+    document.getElementById("entrybutton").addEventListener("click", lab6Function);
+    
+    function lab6Function() {
         var textboxinput = document.getElementById("entryinput").value;
         alert("Darren Rabick: " + textboxinput);
         document.getElementById("textoutput").innerHTML = textboxinput; 
-    });
+    }
+ 
 	</script>
 </body>
 </html>
